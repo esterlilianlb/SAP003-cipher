@@ -1,0 +1,42 @@
+header {
+    border: solid black;
+    margin: 200px;
+}
+body {
+    border: solid black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    text-align: center;
+}
+input.abas {
+    display: none;
+}
+input.abas + a {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    opacity: 100;
+}
+div.a {
+    font-family: sans-serif;
+    font-size: 4rem;
+    color: blue;
+}
+input.abas + a {
+    line-height: 28px;
+    padding: 5px 45px;
+    cursor: pointer; /* Seta se transforma numa mãozinha */
+    transition: ease-in-out .3s;
+    border-radius: 5px 5px 0 0;
+}
+a {
+    background-color: silver;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 2rem;
+}

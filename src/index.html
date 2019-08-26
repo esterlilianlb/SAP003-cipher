@@ -5,24 +5,36 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  <header>
+    <h1>...</h1>
+    <h3>.....</h3>
+  </header>
   <body>
-    <div id="root">
-    <form>
-      <div>
+    <div id="code">
+    <form>      
       <label>Texto</label>
-      <input type='text' id='textcode'/>
-      <input type='number' id='codeoffset'/>
-      <input type='button' id='sendcode' value='cifrar' onclick='encode1()'/>
-      </div>
-      <div>
-      <label>Texto</label>
-      <input type='text' id='textdecode'/>
-      <input type='number' id='decodeoffset'/>
-      <input type='button' id='senddecode' value='decifrar' onclick='decode1()'/>
-      </div>
-    </form>
+      <input type="text" id="textcode"/>
+      <input type="number" id="codeoffset"/>
+      <input type="button" id="sendcode" value="cifrar" onclick="encode1()"/>
     </div>
-    <div id='result'>
+    <div id="decode">
+      <label>Texto</label>
+      <input type="text" id="textdecode"/>
+      <input type="number" id="decodeoffset"/>
+      <input type="button" id="senddecode" value="decifrar" onclick="decode1()"/>
+    </div> 
+    <section class="container">
+      <div class="st-container" id="codeButton">
+        <input type="radio" class= "abas" id="setCode" checked="checked"/>
+        <a href="panel-1">Cifrar</a>
+        <input type="radio" class= "abas" id="setDecode"/>
+				<a href="panel-2">Decifrar</a>
+      </div>
+    </section>
+    </form>
+    
+    <div id="result">
+    
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
