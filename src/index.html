@@ -6,35 +6,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <header>
-    <h1>...</h1>
-    <h3>.....</h3>
+    <h1>Bla</h1>
+    <h3>??</h3>
   </header>
   <body>
-    <div id="code">
-    <form>      
+    <span class="box" id="code">
+      <form>      
       <label>Texto</label>
-      <input type="text" id="textcode"/>
-      <input type="number" id="codeoffset"/>
-      <input type="button" id="sendcode" value="cifrar" onclick="encode1()"/>
-    </div>
-    <div id="decode">
+      <input type="text" class="text" id="textcode"/>
+      <input type="number" class="key" id="codeoffset"/>
+      <input type="button" class= "button" id="sendcode" value="cifrar"/>
+      </form>
+    </span>
+    <span class="box" id="decode">
+      <form>
       <label>Texto</label>
-      <input type="text" id="textdecode"/>
-      <input type="number" id="decodeoffset"/>
-      <input type="button" id="senddecode" value="decifrar" onclick="decode1()"/>
-    </div> 
-    <section class="container">
-      <div class="st-container" id="codeButton">
-        <input type="radio" class= "abas" id="setCode" checked="checked"/>
-        <a href="panel-1">Cifrar</a>
-        <input type="radio" class= "abas" id="setDecode"/>
-				<a href="panel-2">Decifrar</a>
-      </div>
-    </section>
+      <input type="text" class="text" id="textdecode"/>
+      <input type="number" class="key" id="decodeoffset"/>
+      <input type="button" class= "button" id="senddecode" value="decifrar"/>
+      </form>
+    </span> 
+    
+    <footer class="boxresult"> Resultado:
+      <p id="result"></p>
+    </footer>
     </form>
-    
-    <div id="result">
-    
+         
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

@@ -1,42 +1,63 @@
 header {
-    border: solid black;
-    margin: 200px;
+  margin-bottom: 300px;
+  text-align: center;
+  font-family: 'Bungee Shade';
+  font-size: 25px;
 }
 body {
-    border: solid black;
+  border: solid purple;
+  border-radius: 10px;
+  background-color: yellow;
+  margin: 10px;
+  padding: 10px;
+  width: 96,5%;
+  height: 90%;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-    text-align: center;
+span#code {
+  display: inline-flexbox;
+  justify-content: center;
+  text-align: center;
+  float: left;
+  border: 1px solid purple;
+  width: 200px;
+  height: 130px;
+  position: relative;
+  left: 400px;
+  bottom: 200px;
 }
-input.abas {
-    display: none;
+span#decode {
+  display: inline-flexbox;
+  justify-content: center;
+  text-align: center;
+  float: right;
+  border: 1px solid purple;
+  width: 200px;
+  height: 130px;
+  position: relative;
+  right: 400px;
+  bottom: 200px;
 }
-input.abas + a {
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    opacity: 100;
+.boxresult {
+  display: flexbox;
+  height: 150px;
+  width: 450px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 32%;
+  border: solid purple;
+  background-color: lightblue;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
-div.a {
-    font-family: sans-serif;
-    font-size: 4rem;
-    color: blue;
+.text {
+  height: 50px;
+  width: 150px;
 }
-input.abas + a {
-    line-height: 28px;
-    padding: 5px 45px;
-    cursor: pointer; /* Seta se transforma numa mãozinha */
-    transition: ease-in-out .3s;
-    border-radius: 5px 5px 0 0;
+
+.key {
+  height: 20px;
+  width: 35px;
 }
-a {
-    background-color: silver;
-    text-decoration-line: none;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 2rem;
+.button {
+  box-shadow: 4px;
 }
