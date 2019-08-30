@@ -13,6 +13,9 @@ function encode (textCode, codeOffset) {
     } else if (message >=97 && message <=122) {
       let calculo= ((message - 97 + codeOffset) % 26) + 97;
       result += String.fromCharCode(calculo);
+    } else {
+      let calculo= ((message -32 + codeOffset) % 33) +32;
+      result += String.fromCharCode(calculo);
     }
   } 
   return result; 
@@ -28,7 +31,10 @@ function decode (textDecode, decodeOffset) {
     } else if (message >=97 && message <= 122) {
       let calculo= ((message - 122 - decodeOffset) % 26) + 122;
       result += String.fromCharCode(calculo);
-    } 
+    } else {
+      let calculo= ((message -64 - decodeOffset) % 33) +64;
+      result += String.fromCharCode(calculo);
+    }
   }
   return result;
 }
