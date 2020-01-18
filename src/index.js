@@ -18,7 +18,7 @@ function decode1() {
   document.getElementById("result").innerHTML=`${result}`;
 
   if (decodeOffset<0) {
-    return document.getElementById("result").innerHTML="Insira um núemro maior que 0";
+    return document.getElementById("result").innerHTML="Insira um número maior que 0";
   }
 }
 

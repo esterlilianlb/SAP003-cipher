@@ -5,33 +5,34 @@
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <header>
-    <h1>SOS Amazônia</h1>
-    <h3>Faça aqui sua denúncia anônima</h3>
-  </header>
   <body>
-    <span class="box" id="code">
+    <header>
+      <h1>SOS Amazônia</h1>
+      <h3>Faça aqui sua denúncia anônima</h3>
+    </header>
+    <main>
+    <section class="box" id="code">
       <form>      
       <label>codificar mensagem</label>
       <input type="text" class="text" id="textcode"/>
       <input type="number" class="key" id="codeoffset"/>
       <input type="button" class= "button" id="sendcode" value="cifrar"/>
       </form>
-    </span>
-    <span class="box" id="decode">
+    </section>
+    <section class="box" id="decode">
       <form>
       <label>decodificar mensagem</label>
       <input type="text" class="text" id="textdecode"/>
       <input type="number" class="key" id="decodeoffset"/>
       <input type="button" class= "button" id="senddecode" value="decifrar"/>
       </form>
-    </span> 
+    </section> 
+    </main>
     
     <footer class="boxresult"> Resultado:
       <p id="result"></p>
     </footer>
-    </form>
-         
+             
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
